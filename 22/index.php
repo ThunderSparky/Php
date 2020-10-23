@@ -14,25 +14,21 @@
 
         <div class="contenido">
               <h2>Agenda Teléfonica</h2>
+            <!-- Funciones con argumentos POR DEFECTO, que retornan un valor-->
             <?php 
               function usuario($nombre = 'John Doe', $tel = '000000000') {
                   return $contacto = $nombre . " " . $tel;
               }
               
-              $usuario = usuario('Juan Pablo', '1234-1234');
+              $usuario = usuario('Julinho Vásquez', '1234-1234');
               echo $usuario;
+              //El <hr> imprime un separador
               echo "<hr>";
               
               $usuario2 = usuario("Miguel");
               echo $usuario2;
-              
             ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

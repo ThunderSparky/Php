@@ -13,12 +13,18 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
-
+        <!--Espacio en blanco y Comentario-->
                   <?php
                           $titulo = "Aprendiendo PHP";
                   ?>
-                  <?php // imprime tu titulo ?>
+                  <?php // Esto es un comentario en PHP ?>
                   <?php echo $titulo; ?>
+
+                  <?php
+                    /*
+                      Esto es otra forma para comentar en PHP
+                    */
+                  ?>
         </div>
     </div>
 

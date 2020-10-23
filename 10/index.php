@@ -13,30 +13,27 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--Funciones Var_dump y PRINT_R-->
             <?php
-                // versiones anteriores
                 $tecnologias = ['CSS', 'HTML', 'JavaScript', 'jQuery'];
-                ?>
-                
+            ?>
+
+                <!--La funcion print_r funciona mejor dentro de la etiqueta <pre> -->
                 <pre>
                   <?php print_r($tecnologias); ?>
                 </pre>
+                <!--Esto es para mostrar solo un elemento-->
                 <?php echo $tecnologias[2]; ?>
-                
-                
                 
                 <?php
                 $lenguajes = array('CSS', 'jQuery', 'PHP', 'MySQL', 20);
                 echo $lenguajes[3];
-                
                 ?>
                   
+                <!--La funcion var_dump funciona mejor dentro de la etiqueta <pre> -->
                 <pre>
                       <?php var_dump($lenguajes); ?>
                 </pre>      
-                    
-                    
-  
         </div>
     </div>
 

@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!-- Array asociativos-->
             <?php 
                 $persona = array(
                     'nombre' => 'Juan',
@@ -23,17 +24,18 @@
              <pre>
                <?php print_r($persona); ?>
              </pre>
-             
+             <!--Para llamar a un valor del array asociativo, necesitamos colocar el nombre de las llave-->
              <?php echo $persona['profesion'];?>
              
              <pre>
+                <!--El array_values, convierte el array asociativo para que se muestre con indices, y muestra su valor-->
                <?php print_r(array_values( $persona ) ); ?>
              </pre>
              
              <pre>
+                <!--El array_keys, esto nos regresa el nombre de las llaves, ordenadas con indices-->
                <?php print_r( array_keys( $persona ) ); ?>
              </pre>
-              
         </div>
     </div>
 

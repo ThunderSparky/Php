@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--Operaciones en PHP-->
                 <?php
                     echo "10+20: " . (10+20);
                 ?>
@@ -39,9 +40,8 @@
                     //division 
                     echo $numero4 / $numero1;
                     
-                    
                     echo "<hr>";
-                    //parentesis 
+                    //parentesis , el .16 es como si fuera 0.16
                     echo ($numero1 + $numero2) * ($numero1 * .16);
                     
                     echo "<hr>";
@@ -62,7 +62,7 @@
                     $total += 20;
                     $total += 10;
                     
-                    echo $total;
+                    echo "El total es: " . $total;
                     
                     echo "<hr>";
                     
@@ -74,15 +74,10 @@
                     echo $total;
                     
                     echo "<hr>";
-                    
+                    //Modulo
                     echo 20 % 3;
                 ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

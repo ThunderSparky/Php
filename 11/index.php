@@ -13,60 +13,75 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!-- Agregando elementos a arreglos-->
             <?php
                 // versiones anteriores
                 $tecnologias = ['CSS', 'HTML', 'JavaScript', 'jQuery'];
+            ?>
                 
-                ?>
-                
-                    <pre>
-                      <?php print_r($tecnologias); ?>
-                    </pre>
+            <pre>
+              <?php print_r($tecnologias); ?>
+            </pre>
                 
                 <?php  
+                      //De esta manera agregamos un elemento en la ultima posición
                       $tecnologias[] = 'Python';
+                      //Otra manera de agregar un elemento, es colocar el indice que tocaría y colocar su valor
                       $tecnologias[5] = 'Java';
                 ?>
+
             <pre>
               <?php print_r($tecnologias); ?>
             </pre>
             
-              <?php // borrar ultimo elemento y traerlo en variable ?>
-              <?php $java = array_pop($tecnologias); ?>
-              <h1><?php echo $java; ?></h1>
-            
+              <?php 
+                // borrar ultimo elemento y traerlo en variable
+                $java = array_pop($tecnologias); 
+              ?>
+
+              <h1><?php 
+                //Se muestra el valor que hemos borrado
+                echo $java; 
+              ?></h1>
             
               <pre>
                 <?php print_r($tecnologias); ?>
               </pre>
               
-              <?php // remover primer elemento del array ?>
-              <?php unset($tecnologias[0]); ?>
+              <?php
+                 // remover primer elemento del array
+                 unset($tecnologias[0]); 
+              ?>
               
               <pre>
                 <?php print_r($tecnologias); ?>
               </pre>
               
-              <?php // remover primer elemento y agregarlo a variable ?>
-              <?php $html = array_shift($tecnologias); ?>
+              <?php 
+                // remover primer elemento y agregarlo a variable
+                $html = array_shift($tecnologias);
+              ?>
+
               <h1><?php echo $html; ?></h1>
+              
               <pre>
                 <?php print_r($tecnologias); ?>
               </pre>
               
-              <?php // remover ciertos elementos y agregar otros ?>
-              <?php $array = array_splice($tecnologias, 1,1, array('AngularJS', 'jQuery')); ?>
+              <?php
+                // remover ciertos elementos y agregar otros, (array, En que indice quiero comenzar, 
+                // cuanto quiero avanzar, Agregar otros nuevos elementos seguidos de coma)
+                $array = array_splice($tecnologias, 1,1, array('AngularJS', 'jQuery'));
+              ?>
+
               <pre>
                 <?php print_r($array); ?>
               </pre>
+
               <pre>
                 <?php print_r($tecnologias); ?>
               </pre>
         </div>
     </div>
-
-
-
-
   </body>
 </html>

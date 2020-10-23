@@ -13,16 +13,18 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--ARRAY-->
             <?php
-                // versiones anteriores
+                // array indexado, es decir tienen un indice para identificarlos, comenzando por el 0
                 $tecnologias = ['CSS', 'HTML', 'JavaScript', 'jQuery'];
                 echo $tecnologias[0];
                 echo $tecnologias[1];
                 echo $tecnologias[2];
                 echo $tecnologias[3];
                 
+                //Nueva forma de crear un array
                 $lenguajes = array('CSS', 'jQuery', 'PHP', 'MySQL');
-                echo $lenguajes[3];
+                echo $lenguajes[3]; //Muestra mysql
             ?>
               
         </div>

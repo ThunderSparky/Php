@@ -13,10 +13,13 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
-            <?php $premier_league = array('chelsea', 'manchester city', 'manchester united', 'tottenham', 'arsenal', 'liverpool', 'leicester'); ?>
-            
+        <!-- WHILE-->
+            <?php $premier_league = array('chelsea', 'manchester city', 'manchester united',
+                     'tottenham', 'arsenal', 'liverpool', 'leicester'); ?>
+            <!--Declarando la variable i-->
             <?php $i = 0; ?>
-            <?php while($i <= count($premier_league)) {
+            <?php while($i <= count($premier_league)) 
+            {
               if(count($premier_league) > 0 ) {
                     echo $premier_league[$i] . '<br/>';
                     if($i+1 === count($premier_league)) {
@@ -27,12 +30,7 @@
               }
               $i++;
             } ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

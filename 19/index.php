@@ -14,21 +14,17 @@
 
         <div class="contenido">
               <h2>Agenda Teléfonica</h2>
+              <!-- Funciones -->
             <?php 
+              //La funcion se llama usuario()
               function usuario() {
                 echo "Juan Pablo <br/>";
                 echo "1234-1234 <br/>";
               }
-              
+              //Aquí invocamos la funcion
               usuario();
-              
             ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

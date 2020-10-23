@@ -13,7 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
-          
+          <!-- FOR-->
           <?php 
                   $tecnologias = array('CSS', 'HTML', 'JavaScript', 'jQuery','Python');
            ?>
@@ -43,12 +43,7 @@
                      echo $i . '<br/>';
                    }
             }?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

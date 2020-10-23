@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--Estructuras de control, IF, ELSE IF , ELSE-->
                 <?php
                     if(1 < 0) {
                       echo "1 es menor";
@@ -38,14 +39,8 @@
                     } else {
                       echo "el numero es impar";
                     }
-                    
                 ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

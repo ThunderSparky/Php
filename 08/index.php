@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--SWITCH-->
             <?php
                 $lenguaje = "MySQL";
                 
@@ -31,12 +32,7 @@
                       break;      
                 }
             ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

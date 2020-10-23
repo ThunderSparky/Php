@@ -14,16 +14,11 @@
 
         <div class="contenido">
               <h2>Descripción Producto</h2>
-                  
+              <!--la funcion htmlspecialchars: le da un poco de seguridad a nuestra pagina para que no venga codigo infectado-->
+              <!--Si queremos menos seguridad podemos obviar la funcion htmlspecialchars-->
               <p>ID: <?php echo htmlspecialchars($_GET['id']); ?></p>
               <p>Nombre: <?php echo htmlspecialchars($_GET['nombre']); ?>
-                
-              
-        </div>
+       </div>
     </div>
-
-
-
-
   </body>
 </html>

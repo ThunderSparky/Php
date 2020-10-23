@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--Variables de PHP-->
             <?php
                   $hola = "Hola Mundo";
                   $numero =  20;

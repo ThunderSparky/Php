@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!--Concatenacion de cadenas-->
             <?php 
                 $nombre =  "Juan";
                 $apellido = "De la torre";

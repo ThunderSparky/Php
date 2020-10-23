@@ -14,6 +14,7 @@
 
         <div class="contenido">
               <h2>Agenda Teléfonica</h2>
+              <!-- Funciones con argumentos-->
             <?php 
               function usuario($nombre, $tel) {
                   echo $nombre . "<br/>";
@@ -26,14 +27,8 @@
               usuario('Miguel', '9876-9876');
               
               usuario('Alma', '4567-4567');
-              
             ?>
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

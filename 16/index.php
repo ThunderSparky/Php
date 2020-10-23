@@ -13,6 +13,7 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!-- Recorriendo un arreglo MULTIDIMENSIONAL-->
           <?php 
               $persona = array(
                   'datos' => array(
@@ -34,13 +35,14 @@
                   <?php endforeach; ?>
                   
                   <?php foreach($persona as $leng): ?>
+                        <!--La funcion array_key_exists, verifica si la llave 'front_end' existe-->
                         <?php if(array_key_exists('front_end', $leng)): ?>
                               <h2>Lenguajes de Front End</h2>
                               <?php foreach($leng['front_end'] as $front): ?>
                                 <li><?php echo $front; ?></li>
                               <?php endforeach; ?>
                         <?php endif;  ?>
-                        
+                        <!--La funcion array_key_exists, verifica si la llave 'back_end' existe-->
                         <?php if(array_key_exists('back_end', $leng)): ?>
                               <h2>Lenguajes de Back End</h2>
                               <?php foreach($leng['back_end'] as $back): ?>
@@ -49,16 +51,7 @@
                         <?php endif;  ?>
                   <?php endforeach; ?>
             </ul>
-            
-            
-            
-        
-              
         </div>
     </div>
-
-
-
-
   </body>
 </html>

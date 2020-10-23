@@ -11,17 +11,12 @@
 
     <div class="contenedor">
       <h1>Aprendiendo PHP</h1>
-
+        <!-- Enviando valores de una página a otra con $GET-->
         <div class="contenido">
               <h2>Tienda en línea</h2>
-              
-              <a href="producto.php?id=20&nombre=curso">Ir a Producto</a>
-              
+              <!--Aqui le estamos pasando los valores mediante GET-->
+              <a href="producto.php?id=18&nombre=curso">Ir a Producto</a>
         </div>
     </div>
-
-
-
-
   </body>
 </html>

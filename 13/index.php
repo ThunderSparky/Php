@@ -13,21 +13,23 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
+        <!-- Array multidimensionales-->
           <?php 
               $persona = array(
                   'datos' => array(
                         'nombre' => 'Juan',
                         'pais' => 'Mexico',
-                        'profesion' => 'Desarrollador Web'
-                  ),
+                        'profesion' => 'Desarrollador Web'),
                   'lenguajes' => array(
                         'front_end' => array('css', 'html5', 'javascript', 'jquery'),
-                        'back_end' => array('php', 'mysql', 'python')
-                  )
+                        'back_end' => array('php', 'mysql', 'python'))
               );
            ?>
            <pre>
-             <?php print_r($persona['lenguajes']['front_end'][2]); ?>
+             <?php
+                  //Para acceder a una parte especifica del arreglo multidimensional
+                  print_r($persona['lenguajes']['front_end'][2]); 
+             ?>
            </pre>
               
         </div>
